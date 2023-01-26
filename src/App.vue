@@ -1,12 +1,18 @@
 <template>
-  <div id="app">
-    My first Vue project!
+  <div class="wrapper">
+
+    <hero-view />
+    <footer-component />
+
   </div>
 </template>
 
 <script>
-export default {
+import HeroView from "@/views/HeroView.vue";
+import FooterComponent from "@/components/FooterComponent.vue";
 
+export default {
+  components: { HeroView, FooterComponent }
 }
 </script>
 
