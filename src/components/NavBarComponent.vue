@@ -2,17 +2,49 @@
     <header>
         <ul class="header d-flex justify-content-center justify-content-md-start flex-wrap">
             <li class="header__item">
-                <router-link to="/"><img src="@/assets/logo/Logo.svg" alt="logo"></router-link>
+                <router-link :to="links[0].link"><img :src="require(`@/assets/logo/${links[0].icon}`)"
+                        :alt="links[0].icon"></router-link>
             </li>
             <li class="header__item">
-                <router-link to="/our-coffee">Our coffee</router-link>
+                <router-link :to="links[1].link">{{ links[1].text }}</router-link>
             </li>
             <li class="header__item">
-                <router-link to="/for-your-pleasure">For your pleasure</router-link>
+                <router-link :to="links[2].link">{{ links[2].text }}</router-link>
             </li>
             <li class="header__item">
-                <router-link to="/contact-us">Contact us</router-link>
+                <router-link :to="links[3].link">{{ links[3].text }}</router-link>
             </li>
         </ul>
     </header>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            links: [
+                {
+                    id: 0,
+                    link: '/',
+                    icon: 'Logo.svg',
+                },
+                {
+                    id: 1,
+                    link: '/our-coffee',
+                    text: 'Our coffee',
+                },
+                {
+                    id: 2,
+                    link: '/for-your-pleasure',
+                    text: 'For your pleasure',
+                },
+                {
+                    id: 3,
+                    link: '/contact-us',
+                    text: 'Contact us',
+                },
+            ]
+        }
+    }
+}
+</script>
