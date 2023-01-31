@@ -63,6 +63,30 @@ import NavBarComponent from "@/components/NavBarComponent.vue";
 import ProductCardComponent from "@/components/ProductCardComponent.vue";
 
 export default {
-    components: { NavBarComponent, ProductCardComponent }
+    components: { NavBarComponent, ProductCardComponent },
+    data() {
+        return {
+            ourBestCards: [
+                {
+                    id: 0,
+                    title: 'Solimo Coffee Beans 2kg',
+                    price: '10.73',
+                    img: 'coffee-1.jpg"',
+                },
+                {
+                    id: 1,
+                    title: 'Solimo Coffee Beans 2kg',
+                    price: '10.73',
+                    img: 'coffee-1.jpg"',
+                },
+                {
+                    id: 2,
+                    title: 'Solimo Coffee Beans 2kg',
+                    price: '10.73',
+                    img: 'coffee-1.jpg"',
+                },
+            ]
+        }
+    }
 }
 </script>
