@@ -1,15 +1,7 @@
 <template>
     <main>
-        <div class="banner contactspage-banner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <nav-bar-component />
-                    </div>
-                </div>
-                <h1 class="title-big">Contact us</h1>
-            </div>
-        </div>
+        <header-component classItem="banner contactspage-banner" title="Contact us" />
+
         <section class="contacts">
             <div class="container">
                 <div class="row">
@@ -80,9 +72,9 @@
 </template>
 
 <script>
-import NavBarComponent from "@/components/NavBarComponent.vue";
+import HeaderComponent from "@/components/HeaderComponent.vue";
 
 export default {
-    components: { NavBarComponent }
+    components: { HeaderComponent }
 }
 </script>

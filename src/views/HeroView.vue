@@ -47,9 +47,12 @@
                 <div class="row">
                     <div class="col-lg-10 offset-lg-1">
                         <div class="best__wrapper">
-                            <product-card-component />
-                            <product-card-component />
-                            <product-card-component />
+                            <product-card-component classItem="best__item" :name="ourBestCards[0].title"
+                                :price="ourBestCards[0].price" :img="ourBestCards[0].img" />
+                            <product-card-component classItem="best__item" :name="ourBestCards[1].title"
+                                :price="ourBestCards[1].price" :img="ourBestCards[1].img" />
+                            <product-card-component classItem="best__item" :name="ourBestCards[2].title"
+                                :price="ourBestCards[2].price" :img="ourBestCards[2].img" />
                         </div>
                     </div>
                 </div>
@@ -70,20 +73,20 @@ export default {
                 {
                     id: 0,
                     title: 'Solimo Coffee Beans 2kg',
-                    price: '10.73',
-                    img: 'coffee-1.jpg"',
+                    price: 10.73,
+                    img: 'coffee-1.jpg',
                 },
                 {
                     id: 1,
                     title: 'Solimo Coffee Beans 2kg',
-                    price: '10.73',
-                    img: 'coffee-1.jpg"',
+                    price: 10.73,
+                    img: 'coffee-2.jpg',
                 },
                 {
                     id: 2,
                     title: 'Solimo Coffee Beans 2kg',
-                    price: '10.73',
-                    img: 'coffee-1.jpg"',
+                    price: 10.73,
+                    img: 'coffee-3.jpg',
                 },
             ]
         }
