@@ -28,18 +28,8 @@
                 <div class="row">
                     <div class="col-lg-10 offset-lg-1">
                         <div class="shop__wrapper">
-                            <product-card-component classItem="shop__item" :name="pleasurePageCards[0].title"
-                                :price="pleasurePageCards[0].price" :img="pleasurePageCards[0].img" />
-                            <product-card-component classItem="shop__item" :name="pleasurePageCards[1].title"
-                                :price="pleasurePageCards[1].price" :img="pleasurePageCards[1].img" />
-                            <product-card-component classItem="shop__item" :name="pleasurePageCards[2].title"
-                                :price="pleasurePageCards[2].price" :img="pleasurePageCards[2].img" />
-                            <product-card-component classItem="shop__item" :name="pleasurePageCards[3].title"
-                                :price="pleasurePageCards[3].price" :img="pleasurePageCards[3].img" />
-                            <product-card-component classItem="shop__item" :name="pleasurePageCards[4].title"
-                                :price="pleasurePageCards[4].price" :img="pleasurePageCards[4].img" />
-                            <product-card-component classItem="shop__item" :name="pleasurePageCards[5].title"
-                                :price="pleasurePageCards[5].price" :img="pleasurePageCards[5].img" />
+                            <product-card-component v-for="card in pleasurePageCards" :key="card.id"
+                                classItem="shop__item" :name="card.title" :price="card.price" :img="card.img" />
                         </div>
                     </div>
                 </div>
